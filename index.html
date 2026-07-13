@@ -124,6 +124,7 @@
   .avatar{width:76px;height:76px;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;
     color:#fff;font-weight:800;font-size:1.4rem;letter-spacing:.02em}
   .person .nm{font-weight:800; font-size:1rem}
+  .nm-role{display:block; margin-top:3px; font-weight:600; font-size:.8rem; color:var(--muted)}
   .person .af{color:var(--muted); font-size:.88rem; margin-top:2px}
   .person .role{display:inline-block; margin-top:10px; font-size:.78rem; font-weight:700;
     color:#3730a3; background:var(--chip); border:1px solid #e0e7ff; padding:4px 10px; border-radius:999px}
@@ -151,13 +152,31 @@
     nav ul{display:none}
     nav .btn{display:inline-block}
   }
+
+  /* Organizer profile links + headshots */
+  a.person{text-decoration:none; color:inherit; display:block}
+  a.person:hover{text-decoration:none}
+  .avatar{position:relative; overflow:hidden}
+  .avatar img{position:absolute; inset:0; width:100%; height:100%; object-fit:cover; border-radius:50%}
+  .person .view{margin-top:10px; font-size:.8rem; font-weight:700; color:var(--violet)}
+
+  /* CIKM 2026 co-branding lockup */
+  .cikm-chip{margin-left:8px; font-size:.72rem; font-weight:700; color:var(--violet) !important;
+    background:var(--chip); border:1px solid #e0e7ff; padding:3px 9px; border-radius:999px}
+  .cikm-chip:hover{text-decoration:none; filter:brightness(.98)}
+  .cikm-lockup{display:flex; align-items:center; gap:14px; color:#c7cbe0 !important; text-decoration:none;
+    background:rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.16); padding:12px 16px; border-radius:12px; max-width:540px}
+  .cikm-lockup:hover{text-decoration:none; background:rgba(255,255,255,.1)}
+  .cikm-logo{height:46px; width:auto; display:block}
+  .cikm-txt{font-size:.82rem; line-height:1.34}
+  .cikm-txt b{color:#fff; font-size:.98rem}
 </style>
 </head>
 <body>
 
 <header class="nav">
   <div class="wrap nav-inner">
-    <div class="brand"><span class="dot"></span> GRAIL&nbsp;2026</div>
+    <div class="brand"><span class="dot"></span> GRAIL&nbsp;2026 <a class="cikm-chip" href="https://cikm2026.diag.uniroma1.it/" target="_blank" rel="noopener">@ CIKM&nbsp;2026</a></div>
     <nav>
       <ul>
         <li><a href="#overview">Overview</a></li>
@@ -286,16 +305,16 @@
     <p class="lede">GRAIL 2026 is organized by a team spanning academia and industry.
     (Photos are placeholders — headshots to be added.)</p>
     <div class="people">
-      <div class="person"><div class="avatar g1">AJ</div><div class="nm">Ashish Jain (Workshop Chair, Contact)</div><div class="af">Airbnb</div></div>
-      <div class="person"><div class="avatar g2">SC</div><div class="nm">Shubham Chatterjee</div><div class="af">Missouri S&amp;T</div></div>
-      <div class="person"><div class="avatar g3">AG</div><div class="nm">Amit Goyal</div><div class="af">Amazon</div></div>
-      <div class="person"><div class="avatar g4">XW</div><div class="nm">Xi Wang</div><div class="af">University of Sheffield</div></div>
-      <div class="person"><div class="avatar g5">MK</div><div class="nm">Marios Kokkodis</div><div class="af">Airbnb</div></div>
-      <div class="person"><div class="avatar g1">PA</div><div class="nm">Panos Adamopoulos</div><div class="af">Emory University</div></div>
-      <div class="person"><div class="avatar g2">SU</div><div class="nm">Selen Uguroglu</div><div class="af">Airbnb</div></div>
-      <div class="person"><div class="avatar g3">KI</div><div class="nm">Katerina Iliakopoulou-Zanos</div><div class="af">The Walt Disney Company</div></div>
-      <div class="person"><div class="avatar g4">DT</div><div class="nm">Duong Tran</div><div class="af">Thumbtack</div></div>
-      <div class="person"><div class="avatar g5">MC</div><div class="nm">Minmin Chen</div><div class="af">Google DeepMind</div></div>
+      <a class="person" href="https://www.linkedin.com/in/ashish-jain-55127425/" target="_blank" rel="noopener"><div class="avatar g1">AJ<img src="headshots/ashish-jain.jpg" alt="Ashish Jain" loading="lazy" onerror="this.remove()"></div><div class="nm">Ashish Jain <span class="nm-role">(Workshop Chair, Contact)</span></div><div class="af">Airbnb</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://shubham-chatterjee-mst.github.io/" target="_blank" rel="noopener"><div class="avatar g2">SC<img src="headshots/shubham-chatterjee.jpg" alt="Shubham Chatterjee" loading="lazy" onerror="this.remove()"></div><div class="nm">Shubham Chatterjee</div><div class="af">Missouri University of Science and Technology</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.linkedin.com/in/amitgoyal18/" target="_blank" rel="noopener"><div class="avatar g3">AG<img src="headshots/amit-goyal.jpg" alt="Amit Goyal" loading="lazy" onerror="this.remove()"></div><div class="nm">Amit Goyal</div><div class="af">Amazon</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.xiwangeric.com/" target="_blank" rel="noopener"><div class="avatar g4">XW<img src="headshots/xi-wang.jpg" alt="Xi Wang" loading="lazy" onerror="this.remove()"></div><div class="nm">Xi Wang</div><div class="af">University of Sheffield</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.linkedin.com/in/kokkodis/" target="_blank" rel="noopener"><div class="avatar g5">MK<img src="headshots/marios-kokkodis.jpg" alt="Marios Kokkodis" loading="lazy" onerror="this.remove()"></div><div class="nm">Marios Kokkodis</div><div class="af">Airbnb</div><div class="view">View profile ↗</div></a>
+      <div class="person"><div class="avatar g1">PA<img src="headshots/panos-adamopoulos.jpg" alt="Panos Adamopoulos" loading="lazy" onerror="this.remove()"></div><div class="nm">Panos Adamopoulos</div><div class="af">Emory University</div></div>
+      <a class="person" href="https://www.linkedin.com/in/suguroglu/" target="_blank" rel="noopener"><div class="avatar g2">SU<img src="headshots/selen-uguroglu.jpg" alt="Selen Uguroglu" loading="lazy" onerror="this.remove()"></div><div class="nm">Selen Uguroglu</div><div class="af">Airbnb</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.linkedin.com/in/katerinazanos/" target="_blank" rel="noopener"><div class="avatar g3">KI<img src="headshots/katerina-iliakopoulou-zanos.jpg" alt="Katerina Iliakopoulou-Zanos" loading="lazy" onerror="this.remove()"></div><div class="nm">Katerina Iliakopoulou-Zanos</div><div class="af">The Walt Disney Company</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.linkedin.com/in/ddtran/" target="_blank" rel="noopener"><div class="avatar g4">DT<img src="headshots/duong-tran.jpg" alt="Duong Tran" loading="lazy" onerror="this.remove()"></div><div class="nm">Duong Tran</div><div class="af">Thumbtack</div><div class="view">View profile ↗</div></a>
+      <a class="person" href="https://www.linkedin.com/in/minmin-chen-88411311/" target="_blank" rel="noopener"><div class="avatar g5">MC<img src="headshots/minmin-chen.jpg" alt="Minmin Chen" loading="lazy" onerror="this.remove()"></div><div class="nm">Minmin Chen</div><div class="af">Google DeepMind</div><div class="view">View profile ↗</div></a>
     </div>
   </div>
 </section>
@@ -330,10 +349,7 @@
       <div class="fbrand">GRAIL 2026</div>
       <div style="font-size:.9rem;opacity:.8">Generative, Retrieval-augmented, and Agentic Intelligence for Personalization</div>
     </div>
-    <div style="font-size:.9rem">
-      Co-located with <a href="https://cikm2026.diag.uniroma1.it/" target="_blank" rel="noopener">CIKM 2026</a>,
-      Rome · Nov 8, 2026
-    </div>
+    <a class="cikm-lockup" href="https://cikm2026.diag.uniroma1.it/" target="_blank" rel="noopener"><img class="cikm-logo" src="cikm2026-logo.png" alt="CIKM 2026" onerror="this.remove()"><span class="cikm-txt"><b>Co-located with CIKM 2026</b><br>35th ACM Int'l Conference on Information and Knowledge Management<br>Rome, Italy · November 7–11, 2026</span></a>
   </div>
 </footer>
 
